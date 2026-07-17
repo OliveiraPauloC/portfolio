@@ -136,6 +136,7 @@ export default function Home() {
             Projetos e Laboratórios de Arquitetura
           </h2>
           <div className="grid gap-6">
+
             <article className="group bg-slate-900/20 border border-slate-900 p-6 rounded-2xl transition-all hover:border-slate-800 hover:bg-slate-900/40">
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
@@ -152,12 +153,29 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-                <a href="https://github.com/OliveiraPauloC/feature-hub" target="_blank" className="w-full md:w-auto text-xs bg-slate-950 hover:bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-center font-medium transition-colors text-slate-300 shrink-0">Código Fonte</a>
+                <a href="https://github.com/OliveiraPauloC/feature-hub" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto text-xs bg-slate-950 hover:bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-center font-medium transition-colors text-slate-300 shrink-0">Código Fonte</a>
               </div>
             </article>
-            <div className="border border-dashed border-slate-900 rounded-2xl p-6 text-center text-slate-600 text-sm font-medium">
-              ⚡ Em desenvolvimento: BillingHub (Core Financeiro & Webhooks Recorrentes para SaaS)
-            </div>
+
+            <article className="group bg-slate-900/20 border border-slate-900 p-6 rounded-2xl transition-all hover:border-slate-800 hover:bg-slate-900/40">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                  <div className="flex items-center gap-3">
+                    <h3 className="text-lg font-bold text-slate-200 group-hover:text-teal-400 transition-colors">BillingHub 💳</h3>
+                    <span className="text-[10px] uppercase font-bold bg-teal-500/10 text-teal-400 px-2 py-0.5 rounded">Full Stack</span>
+                  </div>
+                  <p className="text-sm text-slate-400 mt-2 leading-relaxed">
+                    Core financeiro e motor de gestão de assinaturas para plataformas SaaS. Desenvolvido sob arquitetura monorepo desacoplada, implementando transações atômicas (ACID) em banco de dados para integridade dos registros e endpoint idempotente de Webhook focado em conciliação assíncrona de faturas.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["Next.js 15", "Tailwind v4", "Express", "Prisma v6", "PostgreSQL", "Docker"].map((tech) => (
+                      <span key={tech} className="text-xs bg-slate-950 text-slate-500 px-2.5 py-1 rounded-md font-mono border border-slate-900">{tech}</span>
+                    ))}
+                  </div>
+                </div>
+                <a href="https://github.com/OliveiraPauloC/billing-hub" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto text-xs bg-slate-950 hover:bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-center font-medium transition-colors text-slate-300 shrink-0">Código Fonte</a>
+              </div>
+            </article>
           </div>
         </section>
 
