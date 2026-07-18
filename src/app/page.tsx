@@ -176,6 +176,26 @@ export default function Home() {
                 <a href="https://github.com/OliveiraPauloC/billing-hub" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto text-xs bg-slate-950 hover:bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-center font-medium transition-colors text-slate-300 shrink-0">Código Fonte</a>
               </div>
             </article>
+
+            <article className="group bg-slate-900/20 border border-slate-900 p-6 rounded-2xl transition-all hover:border-slate-800 hover:bg-slate-900/40">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                  <div className="flex items-center gap-3">
+                    <h3 className="text-lg font-bold text-slate-200 group-hover:text-teal-400 transition-colors">MetricCanvas 📊</h3>
+                    <span className="text-[10px] uppercase font-bold bg-teal-500/10 text-teal-400 px-2 py-0.5 rounded">Front End</span>
+                  </div>
+                  <p className="text-sm text-slate-400 mt-2 leading-relaxed">
+                    Plataforma modular de Business Intelligence com monitoramento de métricas em tempo real. Desenvolvido com foco em isolamento de renderização de dados voláteis, gerência de layout dinâmico no cliente e persistência de grid.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["Next.js 15", "Tailwind v4", "Recharts", "TypeScript", "Turbopack", "Local Storage"].map((tech) => (
+                      <span key={tech} className="text-xs bg-slate-950 text-slate-500 px-2.5 py-1 rounded-md font-mono border border-slate-900">{tech}</span>
+                    ))}
+                  </div>
+                </div>
+                <a href="https://github.com/OliveiraPauloC/metric-canvas" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto text-xs bg-slate-950 hover:bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-center font-medium transition-colors text-slate-300 shrink-0">Código Fonte</a>
+              </div>
+            </article>
           </div>
         </section>
 
