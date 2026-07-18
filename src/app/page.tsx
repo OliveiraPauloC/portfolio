@@ -131,19 +131,19 @@ export default function Home() {
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
                   <div className="flex items-center gap-3">
-                    <h3 className="text-lg font-bold text-slate-200 group-hover:text-teal-400 transition-colors">FeatureHub 🚀</h3>
+                    <h3 className="text-lg font-bold text-slate-200 group-hover:text-teal-400 transition-colors">EventBridge 🚀</h3>
                     <span className="text-[10px] uppercase font-bold bg-teal-500/10 text-teal-400 px-2 py-0.5 rounded">Full Stack</span>
                   </div>
                   <p className="text-sm text-slate-400 mt-2 leading-relaxed">
-                    Painel de governança corporativa de Feature Flags. Desenvolvido sob arquitetura monorepo isolada por Docker, com mutação de estado assíncrona blindada contra concorrência e barramento de cache do Next.js.
+                    Barramento assíncrono de mensageria e orquestração de webhooks de alta escala. Desenvolvido sob arquitetura monorepo desacoplada, implementando ingestão com status HTTP 202 Accepted, filas gerenciadas por BullMQ/Redis e processamento resiliente com políticas de retentativas automáticas.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    {["Next.js 15", "Tailwind v4", "Node.js", "TypeScript", "Express", "Prisma v6", "PostgreSQL", "Docker"].map((tech) => (
+                    {["Next.js 15", "Tailwind v4", "Node.js", "TypeScript", "Express", "BullMQ", "Redis", "Docker"].map((tech) => (
                       <span key={tech} className="text-xs bg-slate-950 text-slate-500 px-2.5 py-1 rounded-md font-mono border border-slate-900">{tech}</span>
                     ))}
                   </div>
                 </div>
-                <a href="https://github.com/OliveiraPauloC/feature-hub" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto text-xs bg-slate-950 hover:bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-center font-medium transition-colors text-slate-300 shrink-0">Código Fonte</a>
+                <a href="https://github.com/OliveiraPauloC/event-bridge" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto text-xs bg-slate-950 hover:bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-center font-medium transition-colors text-slate-300 shrink-0">Código Fonte</a>
               </div>
             </article>
 
@@ -171,6 +171,26 @@ export default function Home() {
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
                   <div className="flex items-center gap-3">
+                    <h3 className="text-lg font-bold text-slate-200 group-hover:text-teal-400 transition-colors">FeatureHub 🚀</h3>
+                    <span className="text-[10px] uppercase font-bold bg-teal-500/10 text-teal-400 px-2 py-0.5 rounded">Full Stack</span>
+                  </div>
+                  <p className="text-sm text-slate-400 mt-2 leading-relaxed">
+                    Painel de governança corporativa de Feature Flags. Desenvolvido sob arquitetura monorepo isolada por Docker, com mutação de estado assíncrona blindada contra concorrência e barramento de cache do Next.js.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {["Next.js 15", "Tailwind v4", "Node.js", "TypeScript", "Express", "Prisma v6", "PostgreSQL", "Docker"].map((tech) => (
+                      <span key={tech} className="text-xs bg-slate-950 text-slate-500 px-2.5 py-1 rounded-md font-mono border border-slate-900">{tech}</span>
+                    ))}
+                  </div>
+                </div>
+                <a href="https://github.com/OliveiraPauloC/feature-hub" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto text-xs bg-slate-950 hover:bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-center font-medium transition-colors text-slate-300 shrink-0">Código Fonte</a>
+              </div>
+            </article>
+
+            <article className="group bg-slate-900/20 border border-slate-900 p-6 rounded-2xl transition-all hover:border-slate-800 hover:bg-slate-900/40">
+              <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                  <div className="flex items-center gap-3">
                     <h3 className="text-lg font-bold text-slate-200 group-hover:text-teal-400 transition-colors">MetricCanvas 📊</h3>
                     <span className="text-[10px] uppercase font-bold bg-teal-500/10 text-teal-400 px-2 py-0.5 rounded">Front End</span>
                   </div>
@@ -186,6 +206,8 @@ export default function Home() {
                 <a href="https://github.com/OliveiraPauloC/metric-canvas" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto text-xs bg-slate-950 hover:bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-center font-medium transition-colors text-slate-300 shrink-0">Código Fonte</a>
               </div>
             </article>
+
+            
           </div>
         </section>
 
