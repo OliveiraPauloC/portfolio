@@ -19,8 +19,8 @@ export default function Home() {
             unindo eficiência técnica, automação de dados e visão de negócio.
           </p>
           <p className="text-slate-400 mt-4 leading-relaxed text-base">
-            Atualmente, venho aprofundando meus conhecimentos em Engenharia de IA Aplicada, focando em como integrar 
-            Machine Learning e IA Generativa (LLMs) em sistemas legados e corporativos já existentes.
+            Atualmente, venho consolidando minha atuação na engenharia de sistemas distribuídos e microsserviços de alta disponibilidade utilizando Node.js, 
+            com forte domínio em arquiteturas orientadas a eventos (Event-Driven), gerenciamento de filas e processamento resiliente de dados em segundo plano.
           </p>
           
           <div className="flex flex-wrap gap-5 mt-8 text-sm font-semibold">
@@ -33,20 +33,20 @@ export default function Home() {
 
         <section className="mb-20">
           <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6 border-b border-slate-900 pb-2">
-            Expertise & Stack
+            Competências Técnicas e Tecnologias
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-5 rounded-xl bg-slate-900/30 border border-slate-900">
-              <h3 className="text-sm font-bold text-teal-400 uppercase tracking-wider mb-3">Enterprise Stacks</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">AEM (Adobe Experience Manager), Java, Sling Models, OSGi Services, Servlets e Oracle Commerce Cloud (OCC).</p>
+              <h3 className="text-sm font-bold text-teal-400 uppercase tracking-wider mb-3">Plataformas Corporativas e Ecossistema Java</h3>
+              <p className="text-sm text-slate-400 leading-relaxed">AEM (Adobe Experience Manager), Java, Sling Models, Serviços OSGi, Servlets e Oracle Commerce Cloud (OCC).</p>
             </div>
             <div className="p-5 rounded-xl bg-slate-900/30 border border-slate-900">
-              <h3 className="text-sm font-bold text-emerald-400 uppercase tracking-wider mb-3">Full Stack Modern</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">React.js, Node.js, TypeScript, Next.js, Express, PostgreSQL, Redux, Tailwind e Docker.</p>
+              <h3 className="text-sm font-bold text-emerald-400 uppercase tracking-wider mb-3">Desenvolvimento Full Stack Moderno</h3>
+              <p className="text-sm text-slate-400 leading-relaxed">Node.js, TypeScript, Next.js 15, React.js, Express, JavaScript (ES6+), PostgreSQL, Redux, Tailwind CSS v4 e Docker.</p>
             </div>
             <div className="p-5 rounded-xl bg-slate-900/30 border border-slate-900">
-              <h3 className="text-sm font-bold text-purple-400 uppercase tracking-wider mb-3">Data & Intelligence</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">Engenharia de IA, Integração de LLMs, Modelos de Machine Learning e Inteligência de Dados Corporativos.</p>
+              <h3 className="text-sm font-bold text-purple-400 uppercase tracking-wider mb-3">Arquitetura de Sistemas e Mensageria</h3>
+              <p className="text-sm text-slate-400 leading-relaxed">Gerenciamento de Filas (BullMQ), Redis, Contêineres Docker Compose, Transações Atômicas (ACID) e Webhooks Idempotentes.</p>
             </div>
           </div>
         </section>
@@ -85,17 +85,7 @@ export default function Home() {
             Formação Acadêmica
           </h2>
           <div className="space-y-8">
-            <EducationCard 
-              degree="Pós-graduação Lato Sensu — Engenharia de IA Aplicada"
-              institution="UNIPDS"
-              period="Mar 2026 — Mar 2027"
-              description="Especialização focada na arquitetura e integração de modelos avançados de Inteligência Artificial em ecossistemas de software reais, complexos e escaláveis. O curso aborda o desenvolvimento de fluxos inteligentes baseados em agentes e a orquestração de pipelines de dados modernos para potencializar a automação, governança e eficiência no ciclo de vida de aplicações corporativas."
-              topics={[
-                "Agentes Autônomos", "Arquiteturas RAG", "LangChain", 
-                "Model Context Protocol (MCP)", "Fine-tuning de LLMs", "Cloud AI (AWS/GCP)"
-              ]}
-            />
-
+            
             <EducationCard 
               degree="Bacharelado, Engenharia de Software"
               institution="Uniamérica"
@@ -148,7 +138,7 @@ export default function Home() {
                     Painel de governança corporativa de Feature Flags. Desenvolvido sob arquitetura monorepo isolada por Docker, com mutação de estado assíncrona blindada contra concorrência e barramento de cache do Next.js.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    {["Next.js 15", "Tailwind v4", "Express", "Prisma v6", "PostgreSQL", "Docker"].map((tech) => (
+                    {["Next.js 15", "Tailwind v4", "Node.js", "TypeScript", "Express", "Prisma v6", "PostgreSQL", "Docker"].map((tech) => (
                       <span key={tech} className="text-xs bg-slate-950 text-slate-500 px-2.5 py-1 rounded-md font-mono border border-slate-900">{tech}</span>
                     ))}
                   </div>
@@ -168,7 +158,7 @@ export default function Home() {
                     Core financeiro e motor de gestão de assinaturas para plataformas SaaS. Desenvolvido sob arquitetura monorepo desacoplada, implementando transações atômicas (ACID) em banco de dados para integridade dos registros e endpoint idempotente de Webhook focado em conciliação assíncrona de faturas.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    {["Next.js 15", "Tailwind v4", "Express", "Prisma v6", "PostgreSQL", "Docker"].map((tech) => (
+                    {["Next.js 15", "Tailwind v4", "Node.js", "TypeScript", "Express", "Prisma v6", "PostgreSQL", "Docker"].map((tech) => (
                       <span key={tech} className="text-xs bg-slate-950 text-slate-500 px-2.5 py-1 rounded-md font-mono border border-slate-900">{tech}</span>
                     ))}
                   </div>
